@@ -1,0 +1,22 @@
+name: Assignment 3 local checks
+on:
+  push:
+    paths: ['assignment_3/**', '.github/workflows/assignment-3.yml']
+  pull_request:
+    paths: ['assignment_3/**', '.github/workflows/assignment-3.yml']
+  workflow_dispatch:
+jobs:
+  custom-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: python tools/run.py --setup
+        working-directory: assignment_3
+      - run: python tools/run.py --check
+        working-directory: assignment_3

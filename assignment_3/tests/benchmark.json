@@ -1,0 +1,86 @@
+{
+  "python": "3.14.3 (main, Mar 10 2026, 18:14:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "timer": "time.perf_counter_ns",
+  "warmup": "one complete untimed call per method per size",
+  "boundary": "algorithm call, including its data structures; no input generation, JSON I/O or compilation",
+  "repetitions": 5,
+  "rows": [
+    {
+      "n": 1000,
+      "m": 2500,
+      "seed": 20262025,
+      "samples_ms": {
+        "kruskal": [
+          1.5211,
+          1.6061,
+          1.5176,
+          1.5889,
+          1.5099
+        ],
+        "prim": [
+          1.7615,
+          1.9165,
+          1.8497,
+          1.9582,
+          1.8645
+        ]
+      },
+      "median_ms": {
+        "kruskal": 1.5211,
+        "prim": 1.8645
+      }
+    },
+    {
+      "n": 10000,
+      "m": 25000,
+      "seed": 20271025,
+      "samples_ms": {
+        "kruskal": [
+          21.1882,
+          21.9491,
+          20.8437,
+          21.1924,
+          20.4055
+        ],
+        "prim": [
+          26.207,
+          28.3278,
+          28.8461,
+          27.3907,
+          27.0053
+        ]
+      },
+      "median_ms": {
+        "kruskal": 21.1882,
+        "prim": 27.3907
+      }
+    },
+    {
+      "n": 100000,
+      "m": 250000,
+      "seed": 20361025,
+      "samples_ms": {
+        "kruskal": [
+          386.3644,
+          414.8649,
+          412.2518,
+          527.6602,
+          684.7499
+        ],
+        "prim": [
+          624.9279,
+          609.4027,
+          715.0445,
+          898.369,
+          923.7956
+        ]
+      },
+      "median_ms": {
+        "kruskal": 414.8649,
+        "prim": 715.0445
+      }
+    }
+  ]
+}

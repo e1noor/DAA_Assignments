@@ -1,0 +1,10 @@
+{"pong": true}
+{"states": [[3, 2], [3, 2], [3, 2], [2, 3]]}
+{"cost": -2, "edge_ids": [3, 2], "components": 2}
+{"cost": -2, "edge_ids": [2, 3], "components": 2}
+{"component": [0, 0, 1], "condensation": [[0, 1]]}
+{"acyclic": true, "order": [0, 1, 2]}
+{"acyclic": true, "distance": [0, 2, -1, null], "parent_edge": [-1, 0, 3, -1]}
+{"acyclic": false, "distance": [], "parent_edge": []}
+{"acyclic": false, "order": []}
+{"states": [[2, 1]]}

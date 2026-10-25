@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "random_graphs": 150,
+  "seed": 20261025,
+  "max_n": 100000,
+  "max_m": 250000,
+  "mixed_requests": 400,
+  "routes": {
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        -3
+      ],
+      [
+        0,
+        2,
+        -1
+      ]
+    ],
+    "result": {
+      "acyclic": true,
+      "distance": [
+        0,
+        2,
+        -1,
+        null
+      ],
+      "parent_edge": [
+        -1,
+        0,
+        3,
+        -1
+      ]
+    },
+    "routes": {
+      "0": [],
+      "1": [
+        0
+      ],
+      "2": [
+        3
+      ],
+      "3": null
+    },
+    "alternative_route": [
+      1,
+      2
+    ],
+    "invalid_witness_rejected": true
+  }
+}
